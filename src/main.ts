@@ -1,3 +1,7 @@
-import logger from './logger'
+import { loadConfig } from './config'
 
-logger.info('This is a log message from main.ts')
+async function main() {
+  await loadConfig()
+}
+
+main()
