@@ -8,6 +8,7 @@ export interface CreateConfigParams {
   }
   rpc?: {
     url?: string
+    ws?: string
   }
 }
 
@@ -19,6 +20,7 @@ export function createConfig(params: CreateConfigParams) {
     },
     rpc: {
       url: params.rpc?.url ?? 'https://api.mainnet-beta.solana.com',
+      ws: params.rpc?.ws ?? 'wss://api.mainnet-beta.solana.com',
     },
   }
 }

@@ -7,6 +7,7 @@ export default createConfig({
   },
   rpc: {
     url: 'https://api.mainnet-beta.solana.com',
+    ws: 'wss://api.mainnet-beta.solana.com',
   },
 },
 )
